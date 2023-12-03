@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            Poppins: ['Poppins', 'sans-serif'],
+
+          },
+          colors: {
+
+            Red: '#e9a4a4',
+            Cyan: ' #68d3d3',
+            Orange: ' #fcf8f2',
+            Blue: '#c4d9f2',
+            VeryDarkBlue: '#141629',
+            GrayishBlue: '#9ab5be',
+            VeryLightGray: '#e6e6e6',
+
+          }
+        }
+      }
+    }
+  </script>
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class=" flex flex-col justify-center items-center font-Poppins bg-VeryLightGray">
+
+
+  <main>
+    <div class="m-10 min-h-full flex flex-col justify-center items-center gap-2 text-center md:min-w-[1000px] md:h-full ">
+      <div class="flex flex-col justify-center items-center gap-2 ">
+        <p class="text-2xl text-GrayishBlue block w-[500px]"> Reliable, efficient delivery</p>
+        <p class="text-2xl text-VeryDarkBlue font-bold block w-[500px]"> Powered by Technology</p>
+        <p class="text-GrayishBlue text-sm max-w-[300px] md:max-w-[400px] md:text-xs "> Our Artificial Intelligence powered
+          tools use millions of project data
+          points
+          to ensure that your project is successful</p>
+      </div>
+
+      <section class=" flex flex-col justify-center items-center text-center max-w-[400px] md:flex-row  md:min-w-full md:justify-evenly  ">
+          
+          <div class="flex flex-col items-center border-top mt-20">
+            <div class="bg-white max-w-[300px] rounded-lg h-[200px] border-top border-t-4 border-Blue text-left p-4 ">
+              <span class="block font-bold text-lg ">Supervisor</span>
+              <p class="text-sm text-GrayishBlue"> Monitors activity to identify project roadblocks</p>
+              <div class="mt-5 flex justify-end">
+                <img src="images/icon-supervisor.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+            <section class="flex flex-col md:flex md:flex-col md:justify-evenly  ">
+            <div class="flex flex-col  items-center border-top mt-10">
+              <div class="bg-white max-w-[300px] rounded-lg h-[200px] border-top border-t-4 border-Red text-left p-4 ">
+                <span class="block font-bold text-lg "> Team Builder</span>
+                <p class="text-sm text-GrayishBlue"> Scans our talent network to create the optimal team for your
+                  project
+                </p>
+                <div class="mt-5 flex justify-end">
+                  <img src="images/icon-team-builder.svg" alt="">
+                </div>
+              </div>
+            </div>
+          
+
+
+            <div class="flex flex-col  items-center border-top mt-10">
+              <div
+                class="bg-white max-w-[300px] rounded-lg h-[200px] border-top border-t-4 border-orange-200 text-left p-4 ">
+                <span class="block font-bold text-lg "> Karma</span>
+                <p class="text-sm text-GrayishBlue">Regularly evaluates our talent to ensure quality</p>
+                <div class="mt-5 flex justify-end">
+                  <img src="images/icon-karma.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="flex flex-col items-center border-top mt-20">
+            <div class="bg-white max-w-[300px] rounded-lg h-[200px] border-top border-t-4 border-blue-200 text-left p-4 ">
+              <span class="block font-bold text-lg "> Calculator</span>
+              <p class="text-sm text-GrayishBlue"> Uses data from past projects to provide better delivery
+                estimates
+              </p>
+              <div class="mt-5 flex justify-end">
+                <img src="images/icon-calculator.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+
+      </section>
+
+
+     
+    </div>
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Abed</a>.
+    </p>
+  </footer>
+
+</body>
+
+</html>
